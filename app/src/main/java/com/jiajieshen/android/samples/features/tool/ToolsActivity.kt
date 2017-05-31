@@ -46,7 +46,7 @@ class ToolsActivity : AppCompatActivity() {
 
     private fun getTools(): ArrayList<Tool> {
         val items = ArrayList<Tool>()
-        items.add(Tool(ToolKey.IMAGE_PALETTE, getString(R.string.tool_image_palette)))
+        items.add(Tool(ToolKey.IMAGE_PALETTE, getString(R.string.tool_image_palette),R.mipmap.ic_palette))
         return items
     }
 }

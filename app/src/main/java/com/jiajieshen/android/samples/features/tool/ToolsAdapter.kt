@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.jiajieshen.android.library.adapterdelegate.BaseAdapterDelegate
 import com.jiajieshen.android.samples.R
 import com.jiajieshen.android.samples.constants.ToolKey
@@ -60,17 +61,21 @@ class ToolsAdapter(private val activity: Activity, items: List<Tool>?
         override fun onBindViewHolder(holder: RecyclerView.ViewHolder, item: Tool, payloads: List<Any>) {
             val viewHolder = holder as ViewHolder
             viewHolder.tvName.text = item.name
+            Glide.with(activity)
+                    .load(item.iconRes)
+                    .centerCrop()
+                    .into(viewHolder.ivIcon)
         }
     }
 
     /**
-     * 
+     *
      */
     private class ViewHolder internal constructor(itemView: View)
         : RecyclerView.ViewHolder(itemView) {
 
-         val ivcon: ImageView = itemView.findViewById(R.id.iv_tools_tool_icon) as ImageView
-         val tvName: TextView = itemView.findViewById(R.id.tv_tools_tool_name) as TextView
+        val ivIcon: ImageView = itemView.findViewById(R.id.iv_tools_tool_icon) as ImageView
+        val tvName: TextView = itemView.findViewById(R.id.tv_tools_tool_name) as TextView
 
     }
 }
