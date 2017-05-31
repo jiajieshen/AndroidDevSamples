@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">AndroidDevSets</string>
+    <string name="app_name">AndroidDevSamples</string>
 
     <string name="tools">Tools</string>
+    <string name="tool_image_palette">Image Palette</string>
 </resources>

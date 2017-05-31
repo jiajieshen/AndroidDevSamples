@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/vg_tools_item_tool_container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="8dp"
+              android:foreground="?selectableItemBackgroundBorderless"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="16dp"
+              android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/iv_tools_tool_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@color/col_999999"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:id="@+id/tv_tools_tool_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="tool"/>
+
+</LinearLayout>
