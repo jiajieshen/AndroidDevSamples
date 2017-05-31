@@ -9,10 +9,12 @@ import com.bumptech.glide.Glide
 import com.jiajieshen.android.library.adapterdelegate.BaseAdapterDelegate
 import com.jiajieshen.android.samples.R
 import com.jiajieshen.android.samples.constants.ToolKey
+import com.jiajieshen.android.samples.features.tool.imagepalette.ImagePaletteActivity
 import com.jiajieshen.android.samples.model.Tool
 
 import com.scausum.adapterdelegate.DelegationAdapter
 import com.scausum.adapterdelegate.OnDelegateClickListener
+import org.jetbrains.anko.startActivity
 
 /**
  * Created by sum on 5/14/17.
@@ -32,14 +34,13 @@ class ToolsAdapter(private val activity: Activity, items: List<Tool>?
         if (position !in 0 until itemCount) {
             return
         }
-        if (view.id != R.id.vg_tools_item_tool_container) {
+        if (view.id != R.id.vg_tools_tool_item_container) {
             return
         }
         val tool = items[position]
         when (tool.key) {
             ToolKey.IMAGE_PALETTE -> {
-                //
-
+                activity.startActivity<ImagePaletteActivity>()
             }
         }
     }
