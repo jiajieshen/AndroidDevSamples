@@ -25,7 +25,6 @@ import jp.wasabeef.glide.transformations.GrayscaleTransformation
 import jp.wasabeef.glide.transformations.gpu.*
 import kotlinx.android.synthetic.main.activity_image_palette.*
 import org.jetbrains.anko.AnkoLogger
-import org.jetbrains.anko.info
 import java.util.*
 
 class ImagePaletteActivity : AppCompatActivity(), AnkoLogger, Toolbar.OnMenuItemClickListener, View.OnClickListener {
@@ -129,7 +128,6 @@ class ImagePaletteActivity : AppCompatActivity(), AnkoLogger, Toolbar.OnMenuItem
     }
 
     override fun onMenuItemClick(menuItem: MenuItem?): Boolean {
-        info("on menu item click")
         if (menuItem?.itemId == R.id.tool_menu_pick_image) {
             startImageSelectorActivity()
         } else {
