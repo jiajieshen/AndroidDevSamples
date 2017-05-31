@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidDevSets</string>
+
+    <string name="tools">Tools</string>
 </resources>
