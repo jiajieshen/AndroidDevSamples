@@ -2,7 +2,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/vg_main_intent_item_container"
+    android:id="@+id/vg_intent_item_container"
     android:layout_width="match_parent"
     android:layout_height="56dp"
     android:layout_marginBottom="8dp"
@@ -11,7 +11,7 @@
     app:cardElevation="4dp">
 
     <TextView
-        android:id="@+id/tv_main_intent_item_label"
+        android:id="@+id/tv_intent_item_label"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
@@ -19,6 +19,6 @@
         android:paddingRight="16dp"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:text="Feature One" />
+        tools:text="Intent Item" />
 
 </android.support.v7.widget.CardView>

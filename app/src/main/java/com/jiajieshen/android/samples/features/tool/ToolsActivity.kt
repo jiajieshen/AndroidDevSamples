@@ -8,7 +8,7 @@ import com.jiajieshen.android.samples.model.Tool
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_tools.*
 import java.util.*
 
 class ToolsActivity : AppCompatActivity() {

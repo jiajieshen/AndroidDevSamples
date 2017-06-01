@@ -3,4 +3,7 @@
 
     <string name="tools">Tools</string>
     <string name="tool_image_palette">Image Palette</string>
+
+    <string name="material_design">Material Design</string>
+
 </resources>

@@ -16,13 +16,13 @@ import com.scausum.adapterdelegate.OnDelegateClickListener
  * Created by sum on 3/29/17.
  */
 
-class MainAdapter(private val activity: Activity, items: List<IntentItem>?)
+class IntentAdapter(private val activity: Activity, items: List<IntentItem>?)
     : DelegationAdapter<IntentItem>(), OnDelegateClickListener {
 
     init {
         this.items = items
 
-        val mainDelegate = MainDelegate(activity)
+        val mainDelegate = IntentDelegate(activity)
         mainDelegate.onDelegateClickListener = this
         this.addDelegate(mainDelegate)
     }
@@ -32,7 +32,7 @@ class MainAdapter(private val activity: Activity, items: List<IntentItem>?)
             return
         }
         when (view.id) {
-            R.id.vg_main_intent_item_container -> {
+            R.id.vg_intent_item_container -> {
                 val intent = Intent()
                 intent.setClassName(activity, items[position].activityClassName)
                 activity.startActivity(intent)
@@ -43,8 +43,8 @@ class MainAdapter(private val activity: Activity, items: List<IntentItem>?)
     /**
      *
      */
-    private class MainDelegate(activity: Activity)
-        : BaseAdapterDelegate<IntentItem>(activity, R.layout.item_main_intent) {
+    private class IntentDelegate(activity: Activity)
+        : BaseAdapterDelegate<IntentItem>(activity, R.layout.item_intent) {
 
         override fun isForViewType(item: IntentItem): Boolean {
             return true
@@ -66,7 +66,7 @@ class MainAdapter(private val activity: Activity, items: List<IntentItem>?)
     private class ViewHolder constructor(itemView: View)
         : RecyclerView.ViewHolder(itemView) {
 
-        val tvLabel = itemView.findViewById(R.id.tv_main_intent_item_label) as TextView
+        val tvLabel = itemView.findViewById(R.id.tv_intent_item_label) as TextView
 
     }
 }
