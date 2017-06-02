@@ -10,4 +10,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
+    <string name="animation">Animation</string>
+    <string name="lottie">Lottie</string>
+
 </resources>
