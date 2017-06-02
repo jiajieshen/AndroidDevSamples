@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/tool_menu_pick_image"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_new_photo"
         android:title="Image"
         app:showAsAction="ifRoom" />
     <item

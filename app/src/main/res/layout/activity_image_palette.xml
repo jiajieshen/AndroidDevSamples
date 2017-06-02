@@ -27,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/col_333333"
+            android:foreground="?selectableItemBackgroundBorderless"
             android:orientation="vertical"
             android:paddingBottom="24dp"
             android:paddingLeft="16dp"
@@ -55,9 +56,9 @@
         <uk.co.senab.photoview.PhotoView
             android:id="@+id/ivImage"
             android:layout_width="match_parent"
-            android:scaleType="centerCrop"
             android:layout_height="match_parent"
-            android:contentDescription="@null" />
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
 
     </FrameLayout>
 
