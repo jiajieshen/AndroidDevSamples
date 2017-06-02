@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
 
     <item
         android:id="@+id/tool_menu_pick_image"
-        android:icon="@mipmap/ic_new_photo"
+        android:icon="@drawable/ic_photo_white_24dp"
         android:title="Image"
         app:showAsAction="ifRoom" />
     <item
@@ -55,5 +57,4 @@
         android:id="@+id/tool_menu_transform_vignette"
         android:title="Vignette"
         app:showAsAction="never" />
-
 </menu>
