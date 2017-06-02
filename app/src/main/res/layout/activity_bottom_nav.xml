@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/tool_image_palette" />
+        app:title="@string/bottom_navigation" />
 
     <TextView
         android:id="@+id/message"
