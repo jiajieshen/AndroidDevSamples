@@ -5,5 +5,9 @@
     <string name="tool_image_palette">Image Palette</string>
 
     <string name="material_design">Material Design</string>
+    <string name="bottom_navigation">Bottom navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>
