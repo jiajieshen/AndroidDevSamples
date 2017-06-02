@@ -24,14 +24,6 @@ class BottomNavActivity : AppCompatActivity() {
                 mTextMessage!!.setText(R.string.title_notifications)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_notifications_2 -> {
-                mTextMessage!!.setText(R.string.title_notifications)
-                return@OnNavigationItemSelectedListener true
-            }
-            R.id.navigation_notifications_3 -> {
-                mTextMessage!!.setText(R.string.title_notifications)
-                return@OnNavigationItemSelectedListener true
-            }
         }
         false
     }
