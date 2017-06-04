@@ -50,6 +50,7 @@
             android:name=".features.md.bottomnav.BottomNavActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTop"
+            android:theme="@style/AppTheme.TranslucentNavigation"
             android:screenOrientation="portrait" />
         <activity
             android:name=".features.animation.AnimationActivity"
