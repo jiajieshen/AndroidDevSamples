@@ -13,3 +13,4 @@
 ＃ BottomNavgationView
 1. elevation 没效果
 2. 与 Snackbar 交互不符合规范
+3. 与虚拟按键栏交互
