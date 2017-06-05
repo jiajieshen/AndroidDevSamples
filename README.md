@@ -1,6 +1,17 @@
-＃ Toolbar
-1. toolbar 需要嵌套在 AppBarLayout 里面才会显示 elevation 的效果
+# NavigationBar
 ```
+# style
+    <style name="AppTheme.TranslucentNavigation" parent="AppTheme">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+```
+
+＃ Toolbar
+1. Toolbar 的 elevation 属性没有阴影效果 －－ 外部套布局 AppBarLayout
+```
+# eg.
 <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -10,7 +21,8 @@
             android:layout_width="match_parent"/>
 </android.support.design.widget.AppBarLayout>
 ```
-＃ BottomNavgationView
+
+＃ BottomNavigationView
 1. elevation 没效果
-2. 与 Snackbar 交互不符合规范
+2. Snackbar 不能 over BottomNavigationView
 3. 与虚拟按键栏交互

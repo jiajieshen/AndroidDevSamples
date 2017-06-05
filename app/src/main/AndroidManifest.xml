@@ -39,19 +39,8 @@
             android:name=".features.md.MaterialDesignActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".features.md.navbar.NavigationBarActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.TranslucentNavigation" />
-        <activity
-            android:name=".features.md.bottomnav.BottomNavActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:launchMode="singleTop"
-            android:theme="@style/AppTheme.TranslucentNavigation"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".features.animation.AnimationActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"

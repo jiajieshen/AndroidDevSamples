@@ -1,16 +1,21 @@
 <resources>
     <string name="app_name">AndroidDevSamples</string>
 
+    <!-- Common -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Tools -->
     <string name="tools">Tools</string>
     <string name="tool_image_palette">Image Palette</string>
 
+    <!-- Material Design -->
     <string name="material_design">Material Design</string>
-    <string name="bottom_navigation">Bottom navigation</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="navigation_bar">Navigation bar</string>
 
+    <!-- Animation -->
     <string name="animation">Animation</string>
     <string name="lottie">Lottie</string>
 
