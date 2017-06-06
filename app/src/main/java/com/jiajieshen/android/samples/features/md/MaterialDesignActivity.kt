@@ -62,7 +62,7 @@ class MaterialDesignActivity : AppCompatActivity(), NavigationView.OnNavigationI
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.md_drawer_nav_camera -> {
+            R.id.md_drawer_nav_share -> {
                 // Handle the camera action
             }
         }
