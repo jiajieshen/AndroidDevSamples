@@ -5,7 +5,8 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    android:fitsSystemWindows="false"
+    android:paddingTop="24dp"
     tools:context=".features.md.MaterialDesignActivity">
 
     <android.support.design.widget.AppBarLayout

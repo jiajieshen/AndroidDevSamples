@@ -50,6 +50,7 @@ dependencies {
     compile 'jp.wasabeef:glide-transformations:2.0.2'
     compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
     compile 'com.airbnb.android:lottie:2.0.0-rc2'
+    compile ('com.github.ozodrukh:CircularReveal:2.0.1@aar') { transitive = true }
 
     compile 'com.scausum.adapterdelegate:recycler-adapter-delegate:0.4.1'
     compile 'com.scausum.imageselector:image-selector:0.2.0'

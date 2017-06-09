@@ -5,7 +5,7 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    android:fitsSystemWindows="false"
     tools:context=".features.md.MaterialDesignActivity"
     tools:openDrawer="start">
 
@@ -19,7 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="false"
         app:headerLayout="@layout/layout_md_nav_header"
         app:menu="@menu/md_drawer" />
 
