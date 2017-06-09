@@ -11,6 +11,19 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_custom_miui"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:kswBackDrawable="@drawable/miui_back_drawable"
+            app:kswBackMeasureRatio="2"
+            app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+            app:kswThumbHeight="18dp"
+            app:kswThumbWidth="18dp"
+            />
+
         <TextView
             style="@style/CategoryItemText"
             android:text="Button" />
