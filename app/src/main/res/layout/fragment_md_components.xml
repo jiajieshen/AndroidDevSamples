@@ -15,36 +15,7 @@
             style="@style/CategoryItemText"
             android:text="Button" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:text="Raised Button"
-            android:textColor="@color/white" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:background="@null"
-            android:foreground="?selectableItemBackgroundBorderless"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:text="Flat Button"
-            android:textColor="@color/colorAccent" />
+        <include layout="@layout/layout_md_components_button" />
 
     </LinearLayout>
 </ScrollView>

@@ -25,11 +25,12 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="SwitchButtonStyle">
-        <item name="android:paddingLeft">10dp</item>
-        <item name="android:paddingRight">10dp</item>
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
+    <style name="ColorAccentRaisedButton">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="WhiteRaisedButton">
+        <item name="colorButtonNormal">@color/white</item>
     </style>
 
 </resources>
