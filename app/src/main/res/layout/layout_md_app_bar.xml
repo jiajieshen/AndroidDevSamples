@@ -26,17 +26,6 @@
         android:id="@+id/vgContentContainer"
         layout="@layout/layout_md_content" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        app:layout_anchor="@+id/bottomNavigation"
-        app:layout_anchorGravity="right|top"
-        app:layout_insetEdge="bottom"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
