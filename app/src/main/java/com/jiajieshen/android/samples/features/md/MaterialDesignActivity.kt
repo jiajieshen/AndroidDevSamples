@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.jiajieshen.android.samples.R
 import kotlinx.android.synthetic.main.activity_material_design.*
-import kotlinx.android.synthetic.main.layout_md_app_bar.*
+import kotlinx.android.synthetic.main.layout_md_content.*
 
 
 class MaterialDesignActivity : AppCompatActivity(),
@@ -17,7 +17,6 @@ class MaterialDesignActivity : AppCompatActivity(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_material_design)
-
 
         initViews()
     }

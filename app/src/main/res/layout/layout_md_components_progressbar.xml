@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:showIn="@layout/fragment_md_components">
+
+    <ProgressBar
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="50" />
+
+    <ProgressBar
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:indeterminate="true" />
+
+    <ProgressBar
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="20"
+        android:secondaryProgress="60" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:indeterminate="true" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/line_progress"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:indeterminate="false"
+        android:max="100"
+        app:progress_stroke_width="4dp"
+        app:style="solid_line"
+        android:progress="30"
+        app:draw_progress_text="false"
+        app:progress_background_color="@color/colorAccent" />
+
+
+</LinearLayout>
