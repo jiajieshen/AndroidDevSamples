@@ -11,9 +11,6 @@
 
     <!-- Material Design -->
     <string name="material_design">Material Design</string>
-    <string name="title_views">Views</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
 
     <!-- Animation -->
     <string name="animation">Animation</string>
