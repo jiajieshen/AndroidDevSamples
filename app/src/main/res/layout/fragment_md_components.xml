@@ -12,6 +12,12 @@
 
         <TextView
             style="@style/CategoryItemText"
+            android:text="Text Field" />
+
+        <include layout="@layout/layout_md_components_textfield" />
+
+        <TextView
+            style="@style/CategoryItemText"
             android:text="Button" />
 
         <include layout="@layout/layout_md_components_button" />
