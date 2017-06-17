@@ -6,13 +6,13 @@
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:showIn="@layout/fragment_md_components">
 
     <ProgressBar
         style="?android:progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:indeterminate="false"
         android:max="100"
         android:progress="50" />

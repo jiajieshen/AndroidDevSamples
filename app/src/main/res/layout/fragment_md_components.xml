@@ -22,5 +22,11 @@
 
         <include layout="@layout/layout_md_components_progressbar" />
 
+        <TextView
+            style="@style/CategoryItemText"
+            android:text="Check Box" />
+
+        <include layout="@layout/layout_md_components_checkbox" />
+
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
