@@ -33,12 +33,12 @@
         <item name="colorButtonNormal">@color/white</item>
     </style>
 
-    <style name="DarkCheckBox" parent="AppTheme">
+    <style name="DarkUI" parent="AppTheme">
         <item name="colorControlNormal">@color/col_999999</item>
         <item name="colorControlActivated">@color/colorAccent</item>
     </style>
 
-    <style name="ColoredCheckBox" parent="AppTheme">
+    <style name="ColoredUI" parent="AppTheme">
         <item name="colorControlNormal">@color/col_666666</item>
         <item name="colorControlActivated">@color/col_f8e058</item>
     </style>

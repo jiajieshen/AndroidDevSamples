@@ -28,5 +28,12 @@
 
         <include layout="@layout/layout_md_components_checkbox" />
 
+
+        <TextView
+            style="@style/CategoryItemText"
+            android:text="Radio Button" />
+
+        <include layout="@layout/layout_md_components_radiobutton" />
+
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
