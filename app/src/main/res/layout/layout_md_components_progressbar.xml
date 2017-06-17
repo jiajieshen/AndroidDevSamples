@@ -47,11 +47,12 @@
         android:layout_marginTop="8dp"
         android:indeterminate="false"
         android:max="100"
-        app:progress_stroke_width="4dp"
-        app:style="solid_line"
         android:progress="30"
         app:draw_progress_text="false"
-        app:progress_background_color="@color/colorAccent" />
-
+        app:progress_background_color="@color/white"
+        app:progress_end_color="@color/colorAccent"
+        app:progress_start_color="@color/colorAccent"
+        app:progress_stroke_width="4dp"
+        app:style="solid_line" />
 
 </LinearLayout>
