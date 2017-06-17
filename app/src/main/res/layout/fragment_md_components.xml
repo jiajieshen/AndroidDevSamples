@@ -12,6 +12,12 @@
 
         <TextView
             style="@style/CategoryItemText"
+            android:text="Rating Bar" />
+
+        <include layout="@layout/layout_md_components_ratingbar" />
+
+        <TextView
+            style="@style/CategoryItemText"
             android:text="Text Field" />
 
         <include layout="@layout/layout_md_components_textfield" />
