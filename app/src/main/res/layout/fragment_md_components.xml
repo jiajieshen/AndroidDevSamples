@@ -35,5 +35,10 @@
 
         <include layout="@layout/layout_md_components_radiobutton" />
 
+        <TextView
+            style="@style/CategoryItemText"
+            android:text="Switch" />
+
+        <include layout="@layout/layout_md_components_switch" />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

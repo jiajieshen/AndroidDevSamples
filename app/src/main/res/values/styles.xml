@@ -43,4 +43,10 @@
         <item name="colorControlActivated">@color/col_f8e058</item>
     </style>
 
+    <style name="ColoredSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/col_f8e058</item>
+        <item name="colorSwitchThumbNormal">@color/col_666666</item>
+        <item name="android:colorForeground">@color/col_999999</item>
+    </style>
+
 </resources>
