@@ -43,5 +43,6 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:text="Flat Button"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/col_f8e058"
+        android:theme="@style/FlatButton" />
 </LinearLayout>
