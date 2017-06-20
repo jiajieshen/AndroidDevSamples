@@ -12,6 +12,9 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.0.0-alpha3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+        classpath 'com.google.gms:google-services:3.1.0'
+        classpath 'com.tencent.bugly:symtabfileuploader:latest.release'
+
     }
 }
 

@@ -1,6 +1,12 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'bugly'
+
+bugly {
+    appId = '000632bdf4'
+    appKey = 'c2f98246-edd1-4055-bbd0-f735d43a403f'
+}
 
 android {
     compileSdkVersion 25
@@ -13,6 +19,8 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+
+        buildConfigField "String", "BUGLY_APP_ID", '"000632bdf4"'
     }
     buildTypes {
         release {
@@ -26,10 +34,13 @@ android {
 }
 
 dependencies {
+
+    testCompile 'junit:junit:4.12'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    testCompile 'junit:junit:4.12'
+
+    compile project(':library')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile "com.android.support:appcompat-v7:$support_version"
     compile "com.android.support:design:$support_version"
@@ -37,5 +48,9 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     compile "org.jetbrains.anko:anko-commons:$anko_version"
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile project(':library')
+
+    compile 'com.google.firebase:firebase-core:11.0.0'
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
 }
+
+apply plugin: 'com.google.gms.google-services'
