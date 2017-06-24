@@ -25,4 +25,44 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="DarkUI" parent="AppTheme">
+        <item name="colorControlNormal">@color/col_999999</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="ColoredUI" parent="AppTheme">
+        <item name="colorControlNormal">@color/col_666666</item>
+        <item name="colorControlActivated">@color/col_f8e058</item>
+    </style>
+
+    <style name="ColorAccentRaisedButton">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="WhiteRaisedButton">
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="FlatButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/col_f8e058</item>
+    </style>
+
+    <style name="ColoredSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/col_f8e058</item>
+        <item name="colorSwitchThumbNormal">@color/col_666666</item>
+        <item name="android:colorForeground">@color/col_999999</item>
+    </style>
+
+    <style name="ColoredEditText" parent="TextAppearance.AppCompat">
+        //hint color And Label Color in False State
+        <item name="android:textColorHint">@color/col_999999</item>
+        <item name="android:textSize">20sp</item>
+        //Label color in True State And Bar Color False And True State
+        <item name="colorAccent">@color/col_f8e058</item>
+        <item name="colorControlNormal">@color/col_999999</item>
+        <item name="colorControlActivated">@color/col_f8e058</item>
+        <item name="colorControlHighlight">@color/col_f8e058</item>
+    </style>
+
 </resources>

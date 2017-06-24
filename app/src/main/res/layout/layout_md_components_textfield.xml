@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Hint text" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Hint text"
+        android:textColor="@color/col_f8e058"
+        android:textCursorDrawable="@null"
+        android:theme="@style/ColoredUI" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:theme="@style/ColoredEditText">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Hint text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

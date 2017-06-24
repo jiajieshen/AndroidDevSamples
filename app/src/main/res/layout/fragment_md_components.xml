@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,42 +7,56 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="60dp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
             style="@style/CategoryItemText"
+            android:text="Sliders" />
+
+        <include layout="@layout/layout_md_components_sliders" />
+
+        <TextView
+            style="@style/CategoryItemText"
+            android:text="Rating Bar" />
+
+        <include layout="@layout/layout_md_components_ratingbar" />
+
+        <TextView
+            style="@style/CategoryItemText"
+            android:text="Text Field" />
+
+        <include layout="@layout/layout_md_components_textfield" />
+
+        <TextView
+            style="@style/CategoryItemText"
             android:text="Button" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            android:clickable="true" />
+        <include layout="@layout/layout_md_components_button" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            android:backgroundTint="@color/colorAccent"
-            android:text="Raised Button"
-            android:textColor="@color/white" />
+        <TextView
+            style="@style/CategoryItemText"
+            android:text="Progress" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            android:background="@null"
-            android:foreground="?selectableItemBackgroundBorderless"
-            android:foregroundTint="@color/colorAccent"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:text="Flat Button"
-            android:textColor="@color/colorAccent" />
+        <include layout="@layout/layout_md_components_progressbar" />
 
+        <TextView
+            style="@style/CategoryItemText"
+            android:text="Check Box" />
+
+        <include layout="@layout/layout_md_components_checkbox" />
+
+
+        <TextView
+            style="@style/CategoryItemText"
+            android:text="Radio Button" />
+
+        <include layout="@layout/layout_md_components_radiobutton" />
+
+        <TextView
+            style="@style/CategoryItemText"
+            android:text="Switch" />
+
+        <include layout="@layout/layout_md_components_switch" />
     </LinearLayout>
-</ScrollView>
+</android.support.v4.widget.NestedScrollView>

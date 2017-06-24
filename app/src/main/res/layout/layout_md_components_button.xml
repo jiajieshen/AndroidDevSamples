@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:showIn="@layout/fragment_md_components">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:elevation="6dp"
+        app:srcCompat="@drawable/ic_add" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Raised Button"
+        android:textColor="@color/colorAccent"
+        android:theme="@style/WhiteRaisedButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Raised Button"
+        android:textColor="@color/white"
+        android:theme="@style/ColorAccentRaisedButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Flat Button"
+        android:textColor="@color/col_f8e058"
+        android:theme="@style/FlatButton" />
+</LinearLayout>
