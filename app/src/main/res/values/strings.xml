@@ -8,6 +8,7 @@
     <!-- Tools -->
     <string name="tools">Tools</string>
     <string name="tool_image_palette">Image Palette</string>
+    <string name="tool_image_transform">Image Transform</string>
 
     <!-- Material Design -->
     <string name="material_design">Material Design</string>

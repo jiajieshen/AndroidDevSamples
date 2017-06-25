@@ -1,6 +1,7 @@
 package com.jiajieshen.android.samples.features.tool
 
 import android.app.Activity
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.ImageView
@@ -8,13 +9,9 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.jiajieshen.android.library.adapterdelegate.BaseAdapterDelegate
 import com.jiajieshen.android.samples.R
-import com.jiajieshen.android.samples.constants.ToolKey
-import com.jiajieshen.android.samples.features.tool.imagepalette.ImagePaletteActivity
 import com.jiajieshen.android.samples.model.Tool
-
 import com.scausum.adapterdelegate.DelegationAdapter
 import com.scausum.adapterdelegate.OnDelegateClickListener
-import org.jetbrains.anko.startActivity
 
 /**
  * Created by sum on 5/14/17.
@@ -38,11 +35,9 @@ class ToolsAdapter(private val activity: Activity, items: List<Tool>?
             return
         }
         val tool = items[position]
-        when (tool.key) {
-            ToolKey.IMAGE_PALETTE -> {
-                activity.startActivity<ImagePaletteActivity>()
-            }
-        }
+        val intent = Intent()
+        intent.setClassName(activity, tool.activityClassName)
+        activity.startActivity(intent)
     }
 
     /**

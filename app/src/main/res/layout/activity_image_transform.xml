@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="6dp"
+            app:title="@string/tool_image_transform"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/vgImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="204dp">
+
+        <LinearLayout
+            android:id="@+id/vgTipsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/col_333333"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:orientation="vertical"
+            android:paddingBottom="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick a Image!"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="The image you picked will be shown here."
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnNone"
+                style="@style/ImageTransformButton"
+                android:text="None"/>
+
+            <Button
+                android:id="@+id/btnGrayscale"
+                style="@style/ImageTransformButton"
+                android:text="Grayscale"/>
+
+
+            <Button
+                android:id="@+id/btnBlur"
+                style="@style/ImageTransformButton"
+                android:text="Blur"/>
+
+
+            <Button
+                android:id="@+id/btnToon"
+                style="@style/ImageTransformButton"
+                android:text="Toon"/>
+
+
+            <Button
+                android:id="@+id/btnSepia"
+                style="@style/ImageTransformButton"
+                android:text="Sepia"/>
+
+
+            <Button
+                android:id="@+id/btnContrast"
+                style="@style/ImageTransformButton"
+                android:text="contrast"/>
+
+            <Button
+                android:id="@+id/btnInvert"
+                style="@style/ImageTransformButton"
+                android:text="Invert"/>
+
+            <Button
+                android:id="@+id/btnSketch"
+                style="@style/ImageTransformButton"
+                android:text="Sketch"/>
+
+            <Button
+                android:id="@+id/btnSwirl"
+                style="@style/ImageTransformButton"
+                android:text="Swirl"/>
+
+            <Button
+                android:id="@+id/btnBrightness"
+                style="@style/ImageTransformButton"
+                android:text="Brightness"/>
+
+            <Button
+                android:id="@+id/btnKuwahara"
+                style="@style/ImageTransformButton"
+                android:text="Kuwahara"/>
+
+            <Button
+                android:id="@+id/btnVignette"
+                style="@style/ImageTransformButton"
+                android:text="Vignette"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

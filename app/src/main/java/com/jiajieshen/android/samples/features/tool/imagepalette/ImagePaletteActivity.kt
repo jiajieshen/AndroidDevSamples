@@ -10,7 +10,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.Transformation
 import com.bumptech.glide.request.animation.GlideAnimation
 import com.bumptech.glide.request.target.SimpleTarget
 import com.jiajieshen.android.samples.R
@@ -19,26 +18,32 @@ import com.scausum.imageselector.lib.ImageSelector
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import jp.wasabeef.glide.transformations.BlurTransformation
-import jp.wasabeef.glide.transformations.CropTransformation
-import jp.wasabeef.glide.transformations.GrayscaleTransformation
-import jp.wasabeef.glide.transformations.gpu.*
 import kotlinx.android.synthetic.main.activity_image_palette.*
 import org.jetbrains.anko.AnkoLogger
 import java.util.*
 
-class ImagePaletteActivity : AppCompatActivity(), AnkoLogger, Toolbar.OnMenuItemClickListener, View.OnClickListener {
+class ImagePaletteActivity :
+        AppCompatActivity(),
+        AnkoLogger,
+        Toolbar.OnMenuItemClickListener,
+        View.OnClickListener {
+
+    companion object {
+        val ARG_IMAGE_PATH = "arg_image_path"
+    }
 
     private val REQUEST_CODE_IMAGE_SELECTOR = 0x100
-
+    private var imagePath: String = ""
     lateinit private var adapter: ColorSwatchAdapter
-    var imagePath: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_image_palette)
 
+        imagePath = intent.getStringExtra(ARG_IMAGE_PATH) ?: ""
+
         initViews()
+        handleImageChanged(imagePath)
     }
 
     private fun initViews() {
@@ -53,7 +58,7 @@ class ImagePaletteActivity : AppCompatActivity(), AnkoLogger, Toolbar.OnMenuItem
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.tool_image_palette_transform, menu)
+        menuInflater.inflate(R.menu.tool_image_palette, menu)
         return true
     }
 
@@ -62,20 +67,19 @@ class ImagePaletteActivity : AppCompatActivity(), AnkoLogger, Toolbar.OnMenuItem
             val pathList = data?.getStringArrayListExtra(ImageSelector.EXTRA_IMAGE_PATH_LIST)
             if (pathList != null) {
                 imagePath = pathList[0]
-                handleImageChanged(imagePath, null)
+                handleImageChanged(imagePath)
             }
         }
         super.onActivityResult(requestCode, resultCode, data)
     }
 
-    private fun handleImageChanged(path: String, transformation: Transformation<Bitmap>?) {
+    private fun handleImageChanged(path: String) {
         if (path.isEmpty()) {
             return
         }
         Glide.with(this)
                 .load(path)
                 .asBitmap()
-                .transform(transformation ?: CropTransformation(this))
                 .into(object : SimpleTarget<Bitmap>() {
                     override fun onResourceReady(resource: Bitmap, glideAnimation: GlideAnimation<in Bitmap>) {
                         ivImage.setImageBitmap(resource)
@@ -130,22 +134,6 @@ class ImagePaletteActivity : AppCompatActivity(), AnkoLogger, Toolbar.OnMenuItem
     override fun onMenuItemClick(menuItem: MenuItem?): Boolean {
         if (menuItem?.itemId == R.id.tool_menu_pick_image) {
             startImageSelectorActivity()
-        } else {
-            val transformation: Transformation<Bitmap> = when (menuItem?.itemId) {
-                R.id.tool_menu_transform_gray_scale -> GrayscaleTransformation(this)
-                R.id.tool_menu_transform_blur -> BlurTransformation(this)
-                R.id.tool_menu_transform_toon -> ToonFilterTransformation(this)
-                R.id.tool_menu_transform_sepia -> SepiaFilterTransformation(this)
-                R.id.tool_menu_transform_contrast -> ContrastFilterTransformation(this)
-                R.id.tool_menu_transform_invert -> InvertFilterTransformation(this)
-                R.id.tool_menu_transform_sketch -> SketchFilterTransformation(this)
-                R.id.tool_menu_transform_swirl -> SwirlFilterTransformation(this)
-                R.id.tool_menu_transform_brightness -> BrightnessFilterTransformation(this)
-                R.id.tool_menu_transform_kuwahara -> KuwaharaFilterTransformation(this)
-                R.id.tool_menu_transform_vignette -> VignetteFilterTransformation(this)
-                else -> CropTransformation(this)
-            }
-            handleImageChanged(imagePath, transformation)
         }
         return true
     }

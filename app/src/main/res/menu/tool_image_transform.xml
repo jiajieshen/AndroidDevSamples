@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/tool_menu_pick_image"
+        android:icon="@drawable/ic_photo"
+        android:title="Image"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/tool_menu_save_image"
+        android:icon="@drawable/ic_save"
+        android:title="Save"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/tool_menu_to_imagepalette"
+        android:title="to ImagePalette"
+        app:showAsAction="never"/>
+</menu>
