@@ -7,6 +7,7 @@ import com.jiajieshen.android.samples.features.tool.ToolsActivity
 import com.jiajieshen.android.samples.model.IntentItem
 import java.util.*
 
+
 class MainActivity : IntentActivity() {
 
     override fun getIntentItems(): List<IntentItem> {

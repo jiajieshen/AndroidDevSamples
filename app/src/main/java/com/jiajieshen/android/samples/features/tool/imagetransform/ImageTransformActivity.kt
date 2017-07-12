@@ -198,7 +198,7 @@ class ImageTransformActivity :
                             return false
                         }
 
-                        override fun onException(e: Exception?, model: String?, target: Target<Bitmap>?, isFirstResource: Boolean): Boolean {
+                        override fun onException(e: Exception, model: String?, target: Target<Bitmap>?, isFirstResource: Boolean): Boolean {
                             emitter.onError(e)
                             return true
                         }

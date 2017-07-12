@@ -8,8 +8,9 @@ import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_intent.*
+import org.jetbrains.anko.AnkoLogger
 
-abstract class IntentActivity : AppCompatActivity() {
+abstract class IntentActivity : AppCompatActivity(), AnkoLogger {
 
     lateinit protected var adapter: IntentAdapter
 
