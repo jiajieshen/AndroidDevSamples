@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.graphics.Palette
 import android.support.v7.widget.Toolbar
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -96,6 +97,7 @@ class ImagePaletteActivity :
 
                     val colorSwatches = ArrayList<ColorSwatch>(paletteSwatchList.size)
                     for (paletteSwatch in paletteSwatchList) {
+                        Log.e("TAG","swatch = " + paletteSwatch)
                         val item = ColorSwatch()
                         item.desc = "#${Integer.toHexString(paletteSwatch.rgb)} / Population = ${paletteSwatch.population}"
                         item.color = paletteSwatch.rgb

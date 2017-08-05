@@ -9,11 +9,11 @@ buildscript {
         maven { url 'https://maven.google.com' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-alpha6'
+        classpath 'com.android.tools.build:gradle:3.0.0-alpha9'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
         classpath 'com.google.gms:google-services:3.1.0'
-        classpath 'com.tencent.bugly:symtabfileuploader:latest.release'
+        classpath 'com.tencent.bugly:symtabfileuploader:2.1.0'
 
     }
 }
