@@ -449,13 +449,9 @@ https://github.com/liuguangqiang/RippleLayout
 
     https://github.com/Yasic/ParticleTextView
 
-    https://github.com/grantland/android-autofittextview
-
     https://github.com/robinhood/ticker
 
     https://github.com/elevenetc/TextSurface
-
-    https://github.com/bluejamesbond/TextJustify-Android
 
     https://github.com/klinker24/Android-TextView-LinkBuilder
 
@@ -836,13 +832,6 @@ https://github.com/mabeijianxi/small-video-record
 https://github.com/WritingMinds/ffmpeg-android
 
 https://github.com/pili-engineering/PLDroidShortVideo
-
-### 蓝牙
-https://github.com/AltBeacon/android-beacon-library
-
-https://github.com/Polidea/RxAndroidBle
-
-https://github.com/Jasonchenlijian/FastBle
 
 ### 游戏框架
 https://github.com/libgdx/libgdx

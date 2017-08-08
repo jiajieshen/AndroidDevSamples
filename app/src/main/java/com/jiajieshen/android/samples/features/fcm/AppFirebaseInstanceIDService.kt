@@ -5,7 +5,7 @@ import com.google.firebase.iid.FirebaseInstanceIdService
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 
-class AppFirebaseInstanceIDService : FirebaseInstanceIdService(),AnkoLogger {
+class AppFirebaseInstanceIDService : FirebaseInstanceIdService(), AnkoLogger {
 
     /**
      * Called if InstanceID token is updated. This may occur if the security of
@@ -16,7 +16,9 @@ class AppFirebaseInstanceIDService : FirebaseInstanceIdService(),AnkoLogger {
     override fun onTokenRefresh() {
         // Get updated InstanceID token.
         val refreshedToken = FirebaseInstanceId.getInstance().token
-        info("Refreshed token: " + refreshedToken!!)
+        info("Refreshed token = " + refreshedToken!!)
+        val id = FirebaseInstanceId.getInstance().id
+        info("Refreshed id = " + id)
 
         // If you want to send messages to this application instance or
         // manage this apps subscriptions on the server side, send the

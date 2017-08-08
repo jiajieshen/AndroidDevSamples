@@ -18,7 +18,7 @@ class ReleaseApplication : Application(),AnkoLogger {
     override fun onCreate() {
         super.onCreate()
 
-        // get current process name
+         // get current process name
         val processName: String? = ProcessUtil.getProcessName(android.os.Process.myPid())
         if (TextUtils.equals(processName, packageName)) {
 
@@ -30,6 +30,8 @@ class ReleaseApplication : Application(),AnkoLogger {
 
             val refreshedToken = FirebaseInstanceId.getInstance().token
             info("Refreshed token: " + refreshedToken!!)
+            val id = FirebaseInstanceId.getInstance().id
+            info("Refreshed id = " + id)
         }
 
     }
