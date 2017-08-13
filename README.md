@@ -839,6 +839,13 @@ https://github.com/libgdx/libgdx
 https://github.com/qjoy/libGDX-Android-AppEffect
 
 
+#Live Templates
+* Log
+```
+groovyScript("def result=''; def params=\"${_1}\".replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i < params.size(); i++) {result += ((i == 0) ? '\"' : '\",') + params[i] + ' = \" + ' + params[i] + ((i < params.size() - 1) ? ' + ' : '');}; return result", methodParameters())
+```
+
+
 
 
 
